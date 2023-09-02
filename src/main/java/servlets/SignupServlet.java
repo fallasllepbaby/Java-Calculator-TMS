@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/guest/signup")
+@WebServlet(name = "SignupServlet", urlPatterns = "/guest/signup")
 public class SignupServlet extends HttpServlet {
     private RegistrationService registrationService = new RegistrationService();
     @Override
@@ -19,7 +19,6 @@ public class SignupServlet extends HttpServlet {
         String password = req.getParameter("password");
         User user = new User(mail, password);
         registrationService.register(user);
-
         resp.getWriter().println("Your mail is " + mail);
     }
 }

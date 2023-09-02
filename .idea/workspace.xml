@@ -10,23 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44081d0d-4748-4c34-bcab-4d9e5927ecff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storages/JdbcStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6734125-d4c8-411c-98f4-38b31ee27a73/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6734125-d4c8-411c-98f4-38b31ee27a73/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6734125-d4c8-411c-98f4-38b31ee27a73/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6734125-d4c8-411c-98f4-38b31ee27a73/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domains/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domains/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domains/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domains/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/CalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/CalculatorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/HttpQueryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/RegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/CalculateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/CalculateServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlets/HistoryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/HistoryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlets/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/SignupServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storages/OperationStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storages/UserStorage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +61,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/Java-Calculator-TMS22&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/Java-Calculator-TMS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -187,7 +179,11 @@
       <workItem from="1693134688417" duration="2408000" />
       <workItem from="1693140487555" duration="6020000" />
       <workItem from="1693200238011" duration="1136000" />
-      <workItem from="1693204173559" duration="7057000" />
+      <workItem from="1693204173559" duration="7308000" />
+      <workItem from="1693222464006" duration="973000" />
+      <workItem from="1693539936905" duration="3872000" />
+      <workItem from="1693625456302" duration="1609000" />
+      <workItem from="1693646667402" duration="1155000" />
     </task>
     <servers />
   </component>

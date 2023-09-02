@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Iterator;
 
-@WebServlet("/user/history")
+@WebServlet(name = "HistoryServlet", urlPatterns = "/user/history")
 public class HistoryServlet extends HttpServlet {
     private JdbcStorage jdbcStorage = new JdbcStorage();
     @Override
