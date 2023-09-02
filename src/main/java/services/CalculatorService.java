@@ -8,8 +8,7 @@ import storages.JdbcStorage;
 public class CalculatorService {
     JdbcStorage jdbcStorage = new JdbcStorage();
 
-    public void calculate(Operation operation) throws SQLException, ClassNotFoundException {
-        User user = AuthenticationService.getUser();
+    public void calculate(User user, Operation operation) throws SQLException, ClassNotFoundException {
         switch (operation.getType()) {
             case "sum" :
                 operation.setResult(operation.getNum1() + operation.getNum2());

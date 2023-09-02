@@ -2,9 +2,7 @@ package servlets;
 
 import domains.Operation;
 import domains.User;
-import services.AuthenticationService;
 import services.CalculatorService;
-import services.RegistrationService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,12 +17,13 @@ public class CalculateServlet extends HttpServlet {
     private CalculatorService calculatorService = new CalculatorService();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        User user = (User) req.getSession().getAttribute("user");
         double num1 = Double.parseDouble(req.getParameter("num1"));
         double num2 = Double.parseDouble(req.getParameter("num2"));
         String type = req.getParameter("type");
         Operation operation = new Operation(num1, num2, type);
         try {
-            calculatorService.calculate(operation);
+            calculatorService.calculate(user, operation);
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

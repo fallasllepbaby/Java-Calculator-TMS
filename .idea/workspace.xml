@@ -11,7 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="44081d0d-4748-4c34-bcab-4d9e5927ecff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filters/ValidationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filters/ValidationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/CalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/CalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/CalculateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/CalculateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/LogoutServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +180,7 @@
       <workItem from="1693222464006" duration="973000" />
       <workItem from="1693539936905" duration="3872000" />
       <workItem from="1693625456302" duration="1609000" />
-      <workItem from="1693646667402" duration="3165000" />
+      <workItem from="1693646667402" duration="4681000" />
     </task>
     <servers />
   </component>

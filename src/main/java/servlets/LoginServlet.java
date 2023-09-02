@@ -15,23 +15,25 @@ import java.sql.SQLException;
 
 @WebServlet(name = "LoginServlet", urlPatterns = "/guest/login")
 public class LoginServlet extends HttpServlet {
+    private JdbcStorage jdbcStorage = new JdbcStorage();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        JdbcStorage jdbcStorage = new JdbcStorage();
         String mail = req.getParameter("mail");
         String password = req.getParameter("password");
 
         try {
             int id = jdbcStorage.getUserId(mail);
             User user = new User(id,mail, password);
-            req.getSession().setAttribute("user", user);
-            AuthenticationService.login(user);
+            if (AuthenticationService.isUser(user)) {
+                req.getSession().setAttribute("user", user);
+                resp.getWriter().println("You have entered!");
+            } else {
+                resp.getWriter().println("There is no such user");
+            }
+
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-
-        resp.getWriter().println("You have entered!");
-        resp.getWriter().println(AuthenticationService.getUser());
     }
 }
