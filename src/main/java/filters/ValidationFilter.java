@@ -1,6 +1,8 @@
 package filters;
 
 import domains.User;
+import services.MailValidationService;
+import services.PasswordValidationService;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -12,14 +14,18 @@ import java.io.IOException;
 
 @WebFilter(servletNames = {"LoginServlet", "SignupServlet"})
 public class ValidationFilter extends HttpFilter {
+    private MailValidationService mailValidationService = new MailValidationService();
+    private PasswordValidationService passwordValidationService = new PasswordValidationService();
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
-        System.out.println(req.getSession().getAttribute("user"));
-        User user = (User) req.getSession().getAttribute("user");
-        if (user != null) {
-            chain.doFilter(req, res);
-        } else {
-            res.sendRedirect("http://localhost:8080/guest");
+        String mail = req.getParameter("mail");
+        String password = req.getParameter("password");
+        if (!mailValidationService.validate(mail)) {
+            res.sendRedirect("http://localhost:8080/wrongMail");
         }
+        if (!passwordValidationService.validate(password)) {
+            res.sendRedirect("http://localhost:8080/wrongPassword");
+        }
+        chain.doFilter(req, res);
     }
 }
