@@ -20,12 +20,12 @@ public class ValidationFilter extends HttpFilter {
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         String mail = req.getParameter("mail");
         String password = req.getParameter("password");
-        if (!mailValidationService.validate(mail)) {
+        if (mailValidationService.validate(mail)) {
             res.sendRedirect("http://localhost:8080/wrongMail");
-        }
-        if (!passwordValidationService.validate(password)) {
+        } else if (passwordValidationService.validate(password)) {
             res.sendRedirect("http://localhost:8080/wrongPassword");
+        } else {
+            chain.doFilter(req, res);
         }
-        chain.doFilter(req, res);
     }
 }

@@ -21,10 +21,11 @@ public class HistoryServlet extends HttpServlet {
     private JdbcStorage jdbcStorage = new JdbcStorage();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("User: " + AuthenticationService.getUser());
+        User user = (User) req.getSession().getAttribute("user");
+        resp.getWriter().println("User: " + user);
         Iterator<String> iterator;
         try {
-            iterator = jdbcStorage.getOperations(AuthenticationService.getUser()).iterator();
+            iterator = jdbcStorage.getOperations(user).iterator();
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         }
